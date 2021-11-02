@@ -6,22 +6,24 @@ package clases;
  */
 public class Pokemon
 {
-    public static final byte Agua = 1;
-    public static final byte Fuego = 2;
-    public static final byte Tierra = 3;
-    public static final byte Electrico = 4;
-    
+
+    public static final int Agua = 1;
+    public static final int Fuego = 2;
+    public static final int Tierra = 3;
+    public static final int Electrico = 4;
+
     private String nombre;
     private String numero;
-    private float altura;
-    private float peso;
+    private double altura;
+    private double peso;
     private boolean sexo;
     private String categoria;
     private String habilidad;
-    private String tipos;
+    private int tipos;
 
     /**
      * Método para crear un nuevo Pokemon
+     *
      * @param nombre del pokemon
      * @param numero del pokemon
      * @param altura del pokemon
@@ -31,7 +33,7 @@ public class Pokemon
      * @param habilidad del pokemon
      * @param tipos variables estaticas
      */
-    public Pokemon(String nombre, String numero, float altura, float peso, boolean sexo, String categoria, String habilidad, String tipos)
+    public Pokemon(String nombre, String numero, double altura, double peso, boolean sexo, String categoria, String habilidad, int tipos)
     {
         this.nombre = nombre;
         this.numero = numero;
@@ -78,7 +80,7 @@ public class Pokemon
     /**
      * @return the altura
      */
-    public float getAltura()
+    public double getAltura()
     {
         return altura;
     }
@@ -86,7 +88,7 @@ public class Pokemon
     /**
      * @param altura the altura to set
      */
-    public void setAltura(float altura)
+    public void setAltura(double altura)
     {
         this.altura = altura;
     }
@@ -94,7 +96,7 @@ public class Pokemon
     /**
      * @return the peso
      */
-    public float getPeso()
+    public double getPeso()
     {
         return peso;
     }
@@ -102,7 +104,7 @@ public class Pokemon
     /**
      * @param peso the peso to set
      */
-    public void setPeso(float peso)
+    public void setPeso(double peso)
     {
         this.peso = peso;
     }
@@ -158,7 +160,7 @@ public class Pokemon
     /**
      * @return the tipos
      */
-    public String getTipos()
+    public int getTipos()
     {
         return tipos;
     }
@@ -166,12 +168,9 @@ public class Pokemon
     /**
      * @param tipos the tipos to set
      */
-    public void setTipos(String tipos)
+    public void setTipos(byte tipos)
     {
         this.tipos = tipos;
     }
 
-    
-    
-    
 }
